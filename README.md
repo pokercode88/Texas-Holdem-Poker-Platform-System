@@ -82,10 +82,11 @@ Includes club/alliance system and real-time voice chat.
 
 ### 方式一：直接安装 APK（推荐）
 
-1. 请联系下方的联系方式要apk包：Telegram	@alibabama401
-2. 安装到 Android 手机
-3. 登录体验账号：`test` / `123456`
-4. 创建房间，开始游戏
+1. 请点击下载：https://github.com/pokercode88/texas-holdem-poker-complete-source/releases/download/v1.0-demo/jinbei.client_4_0313.apk
+2. 如需最新版本可以联系：Telegram	@alibabama401
+3. 安装到 Android 手机
+4. 登录体验账号：`test` / `123456`
+5. 创建房间，开始游戏
 
 ### 方式二：本地编译运行（需完整源码）
 
