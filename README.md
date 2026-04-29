@@ -53,9 +53,6 @@ Includes club/alliance system and real-time voice chat.
 🔥 Start your poker business in days ｜ 几天内启动你的德州业务 ｜ 幾天內啟動你的德州業務  
 🔥 Supports iOS / Android / Web ｜ 支持多端 ｜ 支援多端  
 
-💰 Build your own profitable poker platform faster than ever  
-💰 快速搭建属于你自己的盈利扑克平台  
-💰 快速建立屬於你的盈利撲克平台  
 
 ---
 
@@ -65,9 +62,6 @@ This is NOT just a demo project. This is a real, working poker system.
 这不是演示代码，而是一套可真正运营的系统。  
 這不是測試代碼，而是一套可真正營運的系統。  
 
-👉 You can use it to build a real poker business  
-👉 可用于搭建真实盈利项目  
-👉 可用於搭建真實盈利項目  
 
 ---
 
@@ -167,7 +161,6 @@ Deployment guide（部署文档）
 ## 🚀 快速体验 | Quick Start
 
 ### 获取完整商业源码 | Contact
-如需包含全部8种玩法、语音聊天、俱乐部联盟、完整代码及技术支持的商业版本，请联系：
 
 Telegram	@alibabama401
 Email	ttpoker733@gmail.com
