@@ -1,5 +1,5 @@
-#ifndef __ACTIVITY_LOGCOMM_H__
-#define __ACTIVITY_LOGCOMM_H__
+#ifndef __LOGIN_LOGCOMM_H__
+#define __LOGIN_LOGCOMM_H__
 
 //
 #include <util/tc_logger.h>
@@ -24,22 +24,19 @@ using namespace tars;
 //配置信息
 #define FDLOG_CONFIG_INFO (FDLOG("config_info") << "|")
 
-//游戏配置数据信息
-#define FDLOG_GAME_CONFIG_INFO (FDLOG("game_config_info") << "|")
-
-//奖池变化日志
-#define JACKPOT_CHANGE_LOG_TOPIC "jackpot_change_log"
-#define FDLOG_JACKPOT_CHANGE_LOG (FDLOG("jackpot_change_log") << "|")
+//用户注册日志
+// #define ACCOUNT_REG_LOG_TOPIC "account_reg_log"
+// #define FDLOG_ACCOUNT_REG_LOG (FDLOG("account_reg_log") << "|")
 
 //
-#define FDLOG_INIT_FORMAT(x,y,z) (TarsTimeLogger::getInstance()->initFormatWithType<LogByMinute>(x,y,z))
-#define FDLOG_JACKPOT_CHANGE_LOG_FORMAT (FDLOG_INIT_FORMAT("jackpot_change_log", "%Y%m%d%H%M", 5))
+// #define FDLOG_INIT_FORMAT(x, y, z) (TarsTimeLogger::getInstance()->initFormatWithType<LogByMinute>(x, y, z))
+// #define FDLOG_ACCOUNT_REG_LOG_FORMAT (FDLOG_INIT_FORMAT("account_reg_log", "%Y%m%d%H%M", 5))
 
-//
-#define TERMINATE_APPLICATION() {sleep(10);terminate();}
-
-//
+//接口性能边界值
 #define COST_MS 100
 
-#endif
+//函数调用消耗时间
+#define FUNC_COST_MS(consumStartMs) { long __costTime__ = (TNOWMS) - (consumStartMs);\
+ if (__costTime__ > 3) {ROLLLOG_DEBUG << "scheduler consumTime: " << __costTime__ << endl;} }
 
+#endif
